@@ -52,4 +52,13 @@ class StringCalculatorTest {
 		int actualResult = calculator.add(numbers);
 		assertEquals(expectedResult, actualResult);
 	}
+	
+	@Test
+	void testGivenCalculatorWhenAddSlashSlashSemiColonNewline1SemiColon2Then3() {
+		int expectedResult = 3;
+		String numbers = "//;\n1;2";
+		
+		int actualResult = calculator.add(numbers);
+		assertEquals(expectedResult, actualResult);
+	}
 }
